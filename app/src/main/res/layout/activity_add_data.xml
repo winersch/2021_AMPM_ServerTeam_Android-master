@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.9">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/input_text_desc_1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:text="user id : "
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/input_text_value_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/input_text_desc_1"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/input_text_desc_2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:text="user name : "
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/input_text_value_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/input_text_desc_2"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/input_text_desc_3"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:text="user age : "
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/input_text_value_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/input_text_desc_3"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/input_text_desc_4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:text="user description : "
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/input_text_value_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/input_text_desc_4"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+            </TableRow>
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.1">
+
+        <Button
+            android:id="@+id/add_send_server_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="입력한 내용 서버에 저장하기"/>
+
+        <Button
+            android:id="@+id/add_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="취소"/>
+
+    </LinearLayout>
+
+</LinearLayout>
